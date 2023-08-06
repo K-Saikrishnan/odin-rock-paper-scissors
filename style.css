@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: "Handjet", sans-serif;
+  font-size: 100%;
+  vertical-align: baseline;
+  line-height: 1.25;
+}
+
+body {
+  font-family: "Handjet", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: black;
+  background-size: 10px 10px;
+  background-image: conic-gradient(#333 75%, #222 75%);
+}
+
+header h1 {
+  margin-top: 1rem;
+  color: white;
+  font-weight: bold;
+  font-size: 4rem;
+  text-align: center;
+}
+
+h2 {
+  color: white;
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: center;
+}
+
+article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+article#computer {
+  flex-direction: column;
+  gap: 1rem;
+}
+article#player {
+  flex-direction: column-reverse;
+  gap: 1rem;
+}
+
+section.choice-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+section.choice-icons img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+#player {
+  margin-top: 3rem;
+}
+#player img {
+  cursor: pointer;
+}
+#player img:hover {
+  transform: scale(1.2);
+  transition: all 0.2s ease-in-out;
+}
+
+.score {
+  font-size: 4rem;
+  color: white;
+  text-align: center;
+}
+
+.selected {
+  transform: scale(1.2);
+  transition: all 0.2s ease-in-out;
+  border-width: 5px;
+  border-style: solid;
+}
+
+.player-selected {
+  border-color: green !important;
+  box-shadow: 0 0 10px 3px green;
+}
+
+.computer-selected {
+  border-color: red !important;
+  box-shadow: 0 0 10px 3px red;
+}
+
+footer {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: beige;
+}
+footer *, footer {
+  font-family: "Quicksand", sans-serif;
+}
+footer .heart {
+  color: red;
+  font-size: 1.5rem;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+#result-modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: white;
+  text-align: center;
+  font-size: 30px;
+  user-select: none;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+}
+#result-modal.active {
+  display: block;
+  transform: translate(-50%, -50%) scale(1);
+}
+#result-modal #result-msg {
+  font-size: 40px;
+  font-weight: bold;
+}
+#result-modal #reset-btn {
+  padding: 10px 20px;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+#overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+}
+#overlay.active {
+  display: block;
+}
