@@ -9,9 +9,62 @@
 
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Handjet&display=swap" rel="stylesheet" />
   </head>
 
-  <body></body>
+  <body>
+    <header><h1>Rock Paper Scissors</h1></header>
+    <main>
+      <article id="computer">
+        <h2>Computer</h2>
+
+        <section class="choice-icons">
+          <figure>
+            <img src="assets/rock.svg" alt="rock" />
+          </figure>
+          <figure>
+            <img src="assets/paper.svg" alt="paper" />
+          </figure>
+          <figure>
+            <img src="assets/scissors.svg" alt="scissors" />
+          </figure>
+        </section>
+
+        <section class="score">
+          <p>0</p>
+        </section>
+      </article>
+
+      <article id="player">
+        <h2>You</h2>
+
+        <section class="choice-icons">
+          <figure>
+            <img src="assets/rock.svg" alt="rock" />
+          </figure>
+          <figure>
+            <img src="assets/paper.svg" alt="paper" />
+          </figure>
+          <figure>
+            <img src="assets/scissors.svg" alt="scissors" />
+          </figure>
+        </section>
+
+        <section class="score">
+          <p>0</p>
+        </section>
+      </article>
+    </main>
+    <footer>Made with<b class="heart">&nbsp;♥&nbsp;</b> by <b>&nbsp;Saikrishnan K</b></footer>
+
+    <article id="result-modal">
+      <p id="result-msg"></p>
+      <button id="reset-btn">Play again</button>
+    </article>
+    <div id="overlay"></div>
+  </body>
 
   <script src="index.js"></script>
 </html>
