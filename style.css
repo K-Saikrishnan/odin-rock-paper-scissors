@@ -15,9 +15,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: black;
-  background-size: 10px 10px;
-  background-image: conic-gradient(#333 75%, #222 75%);
+  background-color: #666;
 }
 
 header h1 {

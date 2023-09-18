@@ -18,12 +18,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: black;
-
-  $lighter-black: #222;
-  $darker-black: #333;
-  background-size: 10px 10px;
-  background-image: conic-gradient($darker-black 75%, $lighter-black 75%);
+  background-color: #666;
 }
 
 header h1 {
